@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-fraud-detection",
-  "version": "1.0.0",
-  "description": "Financial Fraud Detector — Monitor transactions for fraud patterns with rules + ML scoring and real-time blocking",
+  "version": "1.0.1",
+  "description": "Financial Fraud Detector \u2014 Monitor transactions for fraud patterns with rules + ML scoring and real-time blocking",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,14 +9,21 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-fraud-detection",
   "homepage": "https://cortexprism.io/marketplace/plugins/fraud-detection",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "fraud_analyze_transaction",
       "description": "Score transaction for fraud risk",
       "params": []
     },
-    { "name": "fraud_list_alerts", "description": "List recent fraud alerts", "params": [] },
+    {
+      "name": "fraud_list_alerts",
+      "description": "List recent fraud alerts",
+      "params": []
+    },
     {
       "name": "fraud_create_rule",
       "description": "Create a custom fraud detection rule",
@@ -29,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
